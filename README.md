@@ -1,2 +1,2 @@
 # landing-page
-Web page cointaing information about me, made with Django.
+Webpage cointaining information about me, made with Django.

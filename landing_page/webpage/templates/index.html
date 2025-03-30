@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Desenvolvedor Júnior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+{% load static %}
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-6">
+    <div class="max-w-4xl w-full bg-gray-800 p-8 rounded-lg shadow-xl">
+        <header class="text-center">
+            <img src="{% static 'images/perfil.png' %}" alt="Foto do Desenvolvedor" class="rounded-full border-4 border-blue-400 shadow-lg mx-auto">
+            <h1 class="text-4xl font-bold text-blue-400 mt-4">Maria Clara Marinho</h1>
+            <p class="text-lg text-gray-300">Desenvolvedora Júnior | Python | SQL </p>
+            <p class="mt-2 text-gray-400">Ex-professora de Inglês, apaixonada por tecnologia e soluções inteligentes.</p>
+        </header>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-blue-300">Informações de Contato</h2>
+            <ul class="mt-2 text-gray-400 text-sm">
+                <li>📍 Localização: João Pessoa, Brasil</li>
+                <li>📧 <a href="mailto:mariaclaramarinhodev@gmail.com" class="text-blue-400 hover:underline">mariaclaramarinhodev@gmail.com</a></li>
+                <li>
+                    <a href="https://github.com/marinho-clara" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maria-clara-marinho-216436284/" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-blue-300">Formação Acadêmica</h2>
+            <div class="mt-4 text-gray-400 text-sm space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-300">Bacharelado em Ciência da Computação</h3>
+                    <p class="text-gray-400">Universidade Federal da Paraíba (UFPB) - 2021 - Presente</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-300">Licenciatura em Letras - Inglês</h3>
+                    <p class="text-gray-400">Universidade Estadual da Paraíba (UEPB) - Concluído em 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-blue-300">Experiência Profissional</h2>
+            <div class="mt-4 text-gray-400 text-sm space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-300">Estágio em Desenvolvimento Web - SESITEC/Inovatec</h3>
+                    <p class="text-gray-400">Jan 2024 - Dez 2024</p>
+                    <ul class="list-disc list-inside text-gray-400 mt-2">
+                        <li>Desenvolvimento de aplicações web responsivas.</li>
+                        <li>Colaboração em projetos de automação de processos.</li>
+                        <li>Integração com APIs REST.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-300">Professora de Língua Inglesa - Cultura Inglesa</h3>
+                    <p class="text-gray-400">2019 - 2024</p>
+                    <ul class="list-disc list-inside text-gray-400 mt-2">
+                        <li>Ensino de gramática, literatura e redação.</li>
+                        <li>Desenvolvimento de métodos didáticos inovadores.</li>
+                        <li>Uso de tecnologia para aprimorar o aprendizado.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-blue-300">Habilidades Técnicas</h2>
+            <div class="mt-4 grid grid-cols-2 gap-4 text-sm text-gray-400">
+                <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-300">Principais</h3>
+                    <ul class="mt-2 list-disc list-inside">
+                        <li>Python, Django & WordPress</li>
+                        <li>SQL & Banco de Dados (básico)</li>
+                        <li>HTML, CSS & JavaScript (básico)</li>
+                        <li>Automação & Web Scraping</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-300">Extras</h3>
+                    <ul class="mt-2 list-disc list-inside">
+                        <li>Git & Versionamento</li>
+                        <li>APIs REST</li>
+                        <li>Conhecimento teórico em Docker & AWS</li>
+                        <li>Vivência em Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-blue-300">Projetos em Destaque</h2>
+            <ul class="mt-2 text-gray-400 text-sm">
+                <li>📌 <a href="#" class="text-blue-400 hover:underline">Landing Page | Django</a></li>
+                <li>📌 <a href="#" class="text-blue-400 hover:underline">Automação de Web Scraping | Python Playwright</a></li>
+                <li>📌 <a href="#" class="text-blue-400 hover:underline">Organizador de Pastas Windows</a></li>
+            </ul>
+        </section>
+
+        <section class="mt-8 text-center">
+            <h2 class="text-2xl font-semibold text-blue-300">Contato</h2>
+            <p class="mt-2 text-gray-400">Aberta a oportunidades e colaborações! Vamos conversar?</p>
+            <a href="https://wa.me/5583999051883" target="_blank" class="mt-4 inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow-lg gap-2">
+                <i class="fab fa-whatsapp text-white text-xl"></i> Chamar no WhatsApp
+            </a>
+        </section>
+    </div>
+</body>
+</html>
